@@ -29,8 +29,10 @@ import { SysdepartmentaddComponent } from './components/sysdepartment/sysdepartm
 import { SysdepartmenteditComponent } from './components/sysdepartment/sysdepartmentedit.component';
 import { SysdepartmentDetailComponent } from './components/sysdepartment/sysdepartmentdetail.component';
 import { SyscompanydetailComponent } from './components/syscompany/syscompanydetail.component';
-import { SysorganizationdimensionComponent } from './components/sysorganizationdimension/sysorganizationdimension.component';
-import { SysorganizationdimensioneditComponent } from './components/sysorganizationdimension/sysorganizationdimensionedit.component';
+//import { SysorganizationdimensionComponent } from './components/sysorganizationdimension/sysorganizationdimension.component';
+import { SysorgdimrelationComponent } from './components/sysorgdimrelation/sysorgdimrelation.component';
+//import { SysorganizationdimensioneditComponent } from './components/sysorganizationdimension/sysorganizationdimensionedit.component';
+import { SysorgdimrelationeditComponent } from './components/sysorgdimrelation/sysorgdimrelationedit.component';
 import { SyscompanychangeComponent } from './components/syscompanychange/syscompanychange.component';
 import { SyscompanyrelationComponent } from './components/syscompanyrelation/syscompanyrelation.component';
 export const Routers: Routes = [
@@ -153,11 +155,11 @@ export const Routers: Routes = [
         component: SyscompanydetailComponent
     }
     , {
-        path: 'syscompanydimList',//组织维度
-        component: SysorganizationdimensionComponent,
+        path: 'sysorgdimList',//组织维度
+        component: SysorgdimrelationComponent,
     }, {
         path: 'syscompanydimEdit',//组织维度编辑
-        component: SysorganizationdimensioneditComponent,
+        component: SysorgdimrelationeditComponent,
     }
     , {
         path: 'syscompanyrelationList',//单位维度关系

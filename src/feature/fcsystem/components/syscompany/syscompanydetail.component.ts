@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ParentEditComponent } from 'fccomponent2';
 import { CommonService } from 'fccore2/common/common';
 import { SyscompanyBusiness } from '../../business/syscompany.business';
 import SystemBusiness from 'fccore2/classes/system.business';
+import { ParentEditComponent } from 'fccomponent2';
 import { FCEVENT } from 'fccomponent2/fc';
 @Component({
     selector: 'syscompanydetail',

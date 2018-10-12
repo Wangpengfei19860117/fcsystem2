@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FCEVENT } from 'fccomponent2/fc';
+
 /* 单位维度关系-删除弹窗 */
+
 @Component({
     selector: 'companyrelationdeletedialog',
     template: `
 <fc-layoutpanel class="templatefastposition ">
     <fc-layoutrow fcSpan="30" fccontent>
-        <fc-tlbform fcAppid="appId" fccontent1></fc-tlbform>
+        <fc-tlbform [fcButtons]="tlbconfig" fccontent1></fc-tlbform>
             <fc-layoutpanel fccontent2>
                 <form fccontent>
                     <fc-layoutpanel fccontent id="basic-information">
@@ -36,6 +38,20 @@ import { FCEVENT } from 'fccomponent2/fc';
   `]
 })
 export class CompanyrelationdeletedialogComponent implements OnInit {
+     //工具栏配置
+     tlbconfig: any[] = [{
+        'BTNTYPE': 'default',
+        'BTNICON': '',
+        'ACTCODE': 'save',
+        'BTNNAME': '保存'
+    }, {
+        'BTNTYPE': 'default',
+        'BTNICON': '',
+        'ACTCODE': 'back',
+        'BTNNAME': '返回列表'
+    }];
+    //上传文件配置
+    fcUploadOption:any= {FILETYPE:'PIC',SOURCEID:'dd90c093667947c4a4265e001602b9cd',SOURCEAID:'SYSAPP','SOURCEFIELD':'APPURL','RESTITLE':''}
     ngOnInit() {
         this._init();
     }

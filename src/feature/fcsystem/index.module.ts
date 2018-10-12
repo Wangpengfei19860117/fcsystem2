@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { Routers } from './index.route'; 
+import { Routers } from './index.route';
 import { FccoreModule } from 'fccore2';
+import { FccomponentModule } from 'fccomponent2';
 import { SysmessageService } from './services/sysmessage.service';
 import { HomeComponent } from './components/home/home.component';
 import { SysroleComponent } from './components/sysrole/sysrole.component';
@@ -54,14 +55,16 @@ import { SyscompanycanceldialogComponent } from './components/dialog/syscompanyc
 import { syscompanytransferdialogComponent } from './components/dialog/syscompanytransferdialog.component';
 import { SyscompanyeditComponent } from './components/syscompany/syscompanyedit.component';
 import { SyscompanydetailComponent } from './components/syscompany/syscompanydetail.component';
-import { SysorganizationdimensionComponent } from './components/sysorganizationdimension/sysorganizationdimension.component';
-import { SysorganizationdimensioneditComponent } from './components/sysorganizationdimension/sysorganizationdimensionedit.component';
+//import { SysorganizationdimensionComponent } from './components/sysorganizationdimension/sysorganizationdimension.component';
+//import { SysorganizationdimensioneditComponent } from './components/sysorganizationdimension/sysorganizationdimensionedit.component';
 import { SyscompanyrelationComponent } from './components/syscompanyrelation/syscompanyrelation.component';
 import { SyscompanyrelationtransferdialogComponent } from './components/dialog/syscompanyrelationtransferdialog.component';
 import { SyscompanyrelationdeletedialogComponent } from './components/dialog/syscompanyrelationdeletedialog.component';
 import { CompanyrelationtransferdialogComponent } from './components/dialog/companyrelationtransferdialog.component';
 import { CompanyrelationdeletedialogComponent } from './components/dialog/companyrelationdeletedialog.component';
-import { FccomponentModule } from 'fccomponent2';
+import { SysorgdimrelationComponent } from './components/sysorgdimrelation/sysorgdimrelation.component';
+import { SysorgdimrelationeditComponent } from './components/sysorgdimrelation/sysorgdimrelationedit.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -120,8 +123,9 @@ import { FccomponentModule } from 'fccomponent2';
     SyscompanycanceldialogComponent,
     syscompanytransferdialogComponent,
     SyscompanydetailComponent,
-    SysorganizationdimensionComponent,
-    SysorganizationdimensioneditComponent,
+    //SysorganizationdimensionComponent,
+    //SysorganizationdimensioneditComponent,
+    SysorgdimrelationeditComponent,
     SyscompanychangeComponent,
     SyscompanyrelationComponent,
     SyscompanyrelationtransferdialogComponent,
@@ -130,7 +134,8 @@ import { FccomponentModule } from 'fccomponent2';
     CompanyrelationdeletedialogComponent,
     SyssetupdialogComponent,
     SysadjustdialogComponent,
-    SyscanceldialogComponent,
+    SyscanceldialogComponent,    
+    SysorgdimrelationComponent,
     SystansferdialogComponent
   ],
   providers: [
